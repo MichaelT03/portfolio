@@ -1,0 +1,63 @@
+/*General Styles*/
+
+body{
+    min-height: 100vh;
+}
+
+/*Navbar styles*/
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.nav-link:hover::after{
+    content: ' ';
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*Footer styles*/
+
+footer{
+    background-color: lightgray;
+    height: 30px;
+    position: sticky;
+    top: 100%;
+}
+
+footer > div.container{
+    min-height: 100%;
+}
+
+.icon-link{
+    color: #212529;
+    text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+
+    #navContent{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+
+    #navContent{
+        text-align: left;
+    }
+
+}
